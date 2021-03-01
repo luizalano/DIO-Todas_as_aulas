@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CalculaNotas</string>
+    <string name="nome_aluno">Nome do Aluno</string>
+    <string name="primeira_nota">7</string>
+    <string name="segunda_nota">7</string>
+    <string name="numero_faltas">10</string>
+</resources>
