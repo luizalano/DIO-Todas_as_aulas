@@ -11,7 +11,7 @@ fun Array<BigDecimal>.media() =
     if(this.isEmpty()) BigDecimal.ZERO
     else this.somatoria() / this.size.toBigDecimal()
 
-fun Double.raiz(radicando:Int) = this.pow(1.0/radicando.toDouble())
+fun Double.raiz(radical:Int) = this.pow(1.0/radical.toDouble())
 
 fun main() {
     val salarios = arrayOf(
