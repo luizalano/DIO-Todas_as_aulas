@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Vermelhos30sp">
+        <item name="android:background">#FABCF4</item>
+        <item name="android:textColor">#590202</item>
+        <item name="android:textSize">30sp</item>
+        <item name ="android:padding">16dp</item>
+    </style>
+
+    <style name="Resultado30sp">
+        <item name="android:background">#C3F8B5</item>
+        <item name="android:textColor">#0E0000</item>
+        <item name="android:textSize">30sp</item>
+        <item name ="android:padding">16dp</item>
+    </style>
+
+
+</resources>

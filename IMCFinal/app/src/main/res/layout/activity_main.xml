@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtTeste"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundotela"
+    tools:context=".MainActivity">>
+
+    <TextView
+        android:id="@+id/tituloapp"
+        style="@style/Vermelhos30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:text="@string/calcula_imc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPeso"
+        style="@style/Vermelhos30sp"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/peso_kg"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloapp" />
+
+    <EditText
+        android:id="@+id/txtAltura"
+        style="@style/Vermelhos30sp"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/altura_cm"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintLeft_toRightOf="@id/txtPeso"
+        app:layout_constraintTop_toBottomOf="@id/tituloapp" />
+
+    <Button
+        android:id="@+id/btnCalcula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        android:text="@string/calcula_imc"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPeso" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        style="@style/Resultado30sp"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintLeft_toRightOf="@id/btnCalcula"
+        app:layout_constraintTop_toBottomOf="@id/txtPeso" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
