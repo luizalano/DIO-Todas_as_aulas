@@ -41,6 +41,24 @@ class HelperDB(
     }
 
     fun contatoDuplicado(nome: String, telefone:String): Boolean{
+        val db = readableDatabase
+        //val clausulaSql = "select count(*) as CONTADOR from $TABLE_NAME where $COLUMNS_NOME = '$nome' and $COLUMNS_TELEFONE = '$telefone'"
+        //var cursor = db.rawQuery(clausulaSql, arrayOf())
+
+        val clausulaSql = "select count(*) as CONTADOR from $TABLE_NAME where $COLUMNS_NOME = ? and $COLUMNS_TELEFONE = ?"
+        val args = arrayOf(nome, telefone)
+        var cursor = db.rawQuery(clausulaSql, args)
+
+        var retorno = false
+        if (cursor.moveToNext()){
+            val q = cursor.getInt(cursor.getColumnIndex("CONTADOR"))
+            if (q > 0) retorno = true
+        }
+
+        return retorno
+    }
+
+    fun temContatoDuplicado(nome: String, telefone:String): Boolean{
         val db = readableDatabase // ?: return mutableListOf()
         var lista = mutableListOf<ContatosVO>()
         var where = "$COLUMNS_NOME = ? and $COLUMNS_TELEFONE = ?"
@@ -69,7 +87,7 @@ class HelperDB(
             where = "$COLUMNS_NOME LIKE ?"
             args = arrayOf("%$busca%")
         }
-        var cursor = db.query(TABLE_NAME,null,where,args,null,null,null)
+        var cursor = db.query(TABLE_NAME,null,where, args,null,null,null)
         //cursor = db.rawQuery(clausulaSql, arrayOf())
         if (cursor == null){
             db.close()

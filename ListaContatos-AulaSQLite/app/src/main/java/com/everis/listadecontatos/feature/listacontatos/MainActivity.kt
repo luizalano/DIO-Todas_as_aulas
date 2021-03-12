@@ -64,6 +64,7 @@ class MainActivity : BaseActivity() {
             }catch (ex: Exception){
                 ex.printStackTrace()
             }
+            // Alterações de visual não podem ser feitas em threads que não a principal
             runOnUiThread {
                 adapter = ContatoAdapter(this,listaFiltrada) {onClickItemRecyclerView(it)}
                 recyclerView.adapter = adapter
