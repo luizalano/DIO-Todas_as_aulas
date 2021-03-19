@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="TextViewEstilo" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/bordozao</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="fundoCartao" parent="Widget.MaterialComponents.CardView">
+        <item name="android:background">@color/amarelo</item>
+    </style>
+</resources>

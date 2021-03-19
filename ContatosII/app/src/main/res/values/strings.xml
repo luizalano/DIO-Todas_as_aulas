@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Contatos - II</string>
+    <string name="nomecontato">Nome do contato</string>
+    <string name="telefone">11 99999-4444</string>
+    <string name="item_menu_1">Item 1</string>
+    <string name="item_menu_2">Item 2</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+
+</resources>

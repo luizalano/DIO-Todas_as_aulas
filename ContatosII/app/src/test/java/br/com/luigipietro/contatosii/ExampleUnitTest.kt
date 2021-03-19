@@ -1,4 +1,4 @@
-package com.everis.listadecontatos
+package br.com.luigipietro.contatosii
 
 import org.junit.Test
 
