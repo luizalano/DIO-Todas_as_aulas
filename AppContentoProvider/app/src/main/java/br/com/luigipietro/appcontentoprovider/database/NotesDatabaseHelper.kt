@@ -11,7 +11,7 @@ class NotesDatabaseHelper(context: Context):SQLiteOpenHelper(context, "databaseN
         db?.execSQL("create table $TABLE_NOTES (" +
                          "$_ID INTEGER NOT NULL PRIMARY KEY, " +
                          "$TITLE_NOTES TEXT NOT NULL, " +
-                         "$DESCRIPTION_NOTES TEXT NOT NULL")
+                         "$DESCRIPTION_NOTES TEXT NOT NULL)")
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {

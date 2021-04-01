@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "141460631050",
+    "project_id": "dio-testes",
+    "storage_bucket": "dio-testes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141460631050:android:f5fbc2bc4f87de4e33f9f3",
+        "android_client_info": {
+          "package_name": "br.com.luigipietro.appnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141460631050-kgnub6g44jg9mc9vm2pp9dka1o5b2bcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUCW5fTCyONf4C0VhPodqYOS3JPO6EHbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141460631050-kgnub6g44jg9mc9vm2pp9dka1o5b2bcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
