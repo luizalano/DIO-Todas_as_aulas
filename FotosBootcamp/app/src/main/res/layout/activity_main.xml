@@ -13,17 +13,30 @@
         android:scaleType="centerCrop"
         android:contentDescription="@string/selected_image"
         android:src="@drawable/image"
-        android:layout_width="400dp"
-        android:layout_height="400dp"/>
+        android:layout_width="370dp"
+        android:layout_height="370dp"/>
 
     <Button
         android:id="@+id/pick_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:layout_margin="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:text="@string/btn_pick_image"
         style="@style/Widget.AppCompat.Button.Colored"
         />
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:padding="8dp"
+        android:text="@string/btn_open_camera"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
 
 </LinearLayout>
